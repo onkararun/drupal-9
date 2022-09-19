@@ -1,0 +1,6 @@
+name: Configuration Form Example
+description: Custom Module for Configuration Form
+type: module
+core: 8.x
+package: Custom
+core_version_requirement: ^8 || ^9

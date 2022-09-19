@@ -1,0 +1,3 @@
+services:
+    configuration_form_example.configuration_service:
+        class: Drupal\configuration_form_example\ConfigurationFormService

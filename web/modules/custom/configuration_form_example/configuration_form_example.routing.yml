@@ -1,0 +1,18 @@
+configuration_form_example.settings_form:
+  path: '/admin/config/configuration_form_example/settings'
+  defaults:
+    _form: '\Drupal\configuration_form_example\Form\SettingsForm'
+    _title: 'SettingsForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+configuration_form_example.configurationFormValue:
+  path: '/config-page'
+  defaults:
+    _controller: '\Drupal\configuration_form_example\Controller\ConfigurationController::configurationFormValue'
+    _title: 'Configuration Page'
+  requirements:
+    _permission: 'access content'
+

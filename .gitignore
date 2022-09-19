@@ -1,0 +1,4 @@
+# List Ignore Folders and Files
+.editorconfig
+.gitattributes
+vendor/
