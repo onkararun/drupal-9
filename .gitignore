@@ -2,4 +2,4 @@
 .editorconfig
 .gitattributes
 vendor/
-sites/default/files
+files/
