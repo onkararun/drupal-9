@@ -1,0 +1,14 @@
+bootstrap-cdn:
+  remote: getbootstrap.com
+  version: 5.0
+  license:
+    name: MIT
+    url: https://github.com/twbs/bootstrap/blob/main/LICENSE
+  css:
+    theme:
+      'https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css':
+        type: external
+        minified: true
+        attributes:
+          crossorigin: anonymous
+          integrity: "sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"

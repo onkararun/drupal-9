@@ -1,0 +1,17 @@
+name: Practicle
+description: This is a practicle theme
+type: theme
+core: 8.x
+package: other
+base theme: false
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - practicle/bootstrap-cdn
+
+regions:
+  header: 'Header'
+  menu: 'Menu'
+  content: 'Content'
+  first_sidebar: 'First Sidebar'
+  footer: 'Footer'
