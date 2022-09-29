@@ -1,0 +1,6 @@
+name: Field Example
+description: This is a Example of Custom Widget
+core: 8.x
+type: module
+package: Custom
+core_version_requirement: ^8 || ^9
