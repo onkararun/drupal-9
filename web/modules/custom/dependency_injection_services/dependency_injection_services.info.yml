@@ -1,0 +1,6 @@
+name: Dependency injection services
+description: Dependency injection services
+type: module
+core: 8.x
+package: Custom
+core_version_requirement: ^8 || ^9

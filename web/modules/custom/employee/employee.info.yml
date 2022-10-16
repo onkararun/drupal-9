@@ -1,0 +1,6 @@
+name: Employee
+description: This is a Employee custom module
+core: 8.x
+type: module
+package: Custom
+core_version_requirement: ^8 || ^9

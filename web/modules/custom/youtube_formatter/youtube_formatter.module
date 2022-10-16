@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function youtube_formatter_theme() {
+  return array(
+    'youtube_link_formatter' => array(
+      'variables' => array('url' => NULL),
+      'template' => 'youtube-link-formatter',
+    ),
+  );
+}

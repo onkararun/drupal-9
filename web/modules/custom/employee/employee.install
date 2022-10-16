@@ -1,0 +1,65 @@
+<?php
+use Drupal\Core\Database\Database;
+/**
+ * Implements hook_schema().
+ */
+function employee_schema() {
+  $schema['employees'] = [
+    'description' => 'employee table',
+    'fields' => [
+      'id' => [
+        'description' => 'employee id',
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'description' => 'name',
+        'type' => 'varchar',
+        'length' => 50,
+        'not null' => TRUE,
+      ],
+      'gender' => [
+        'description' => 'gender',
+        'type' => 'varchar',
+        'length' => 10,
+        'not null' => TRUE,
+      ],
+      'about_employee' => [
+        'description' => 'about employee',
+        'type' => 'text',
+        'not null' => TRUE,
+      ],
+      'create_date' => [
+        'mysql_type' => 'timestamp',
+        'not null' => TRUE,
+      ],
+    ],
+    // primary_key needs to be outside the fields array.
+    'primary key' => ['id'],
+    'indexes' => [
+      'id'=>['id'],
+      'name'=>['name']
+    ]
+  ];
+  // Don't forget to return the schema.
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall()
+ */
+function employee_uninstall() {
+  \Drupal::database()->schema()->dropTable('employees');
+}
+
+function employee_update_8001(){
+  $ret = [];
+  $con = Database::getConnection();
+  
+  $spec = [
+    'type' => 'text',
+    'size' => 'tiny',
+  ];
+  $ret[] = $con->schema()->addField('employees', 'test_field_2', $spec);
+  return $ret;
+}

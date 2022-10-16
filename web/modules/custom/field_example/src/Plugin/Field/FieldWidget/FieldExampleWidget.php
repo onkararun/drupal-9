@@ -17,7 +17,7 @@ use Drupal\Core\Form\FormStateInterface;
  *   }
  * )
  */
-class TextWidget extends WidgetBase {
+class FieldExampleWidget extends WidgetBase {
 
   /**
    * {@inheritdoc}
