@@ -2,11 +2,16 @@
 
 function basic_page_theme($existing, $theme, $type, $path){
 	return array(
-    'information_page'=>array(
-    	'variables'=>array(
-    		'title'=>'',
-    		'items'=>[]
-    	)
-    ) 
+	    'information_page'=>array(
+	    	'variables'=>array(
+	    		'title'=>'',
+	    		'items'=>[]
+	    	)
+	    ) 
 	);
 }
+
+//For adding css in the module
+// function basic_page_page_attachments(array &$page){
+// 	$page['#attached']['library'][] = 'basic_page/basic_page_css';
+// }

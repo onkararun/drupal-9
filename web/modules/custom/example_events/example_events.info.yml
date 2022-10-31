@@ -1,0 +1,6 @@
+name: Custom Event Example
+description: This is a custom event module
+type: module
+core: 8.x
+package: Custom
+core_version_requirement: ^8 || ^9
