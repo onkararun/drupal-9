@@ -1,0 +1,29 @@
+uuid: e196fe76-856c-446d-bbcd-d33defb77c41
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blogs_listing
+  module:
+    - system
+    - views
+  theme:
+    - practicle
+id: views_block__blogs_listing_block_2
+theme: practicle
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:blogs_listing-block_2'
+settings:
+  id: 'views_block:blogs_listing-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

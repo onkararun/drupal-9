@@ -1,0 +1,25 @@
+uuid: 7b4b6e12-640d-49ed-b81b-bf02e4e0adeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.enquiry_
+  module:
+    - webform
+  theme:
+    - olivero
+id: webform
+theme: olivero
+region: sidebar
+weight: -7
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Enquiry Form'
+  label_display: '0'
+  provider: webform
+  webform_id: enquiry_
+  default_data: ''
+  redirect: false
+visibility: {  }

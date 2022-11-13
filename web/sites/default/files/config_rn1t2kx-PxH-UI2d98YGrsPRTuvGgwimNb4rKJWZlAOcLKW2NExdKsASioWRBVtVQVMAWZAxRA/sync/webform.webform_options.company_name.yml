@@ -1,0 +1,12 @@
+uuid: df23dc04-9408-4bbc-af5e-aa05f6fc8b75
+langcode: en
+status: true
+dependencies: {  }
+id: company_name
+label: 'Company Name'
+category: ''
+likert: false
+options: |-
+  TCS: TCS
+  IBM: IBM
+  Wipro: Wipro

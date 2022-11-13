@@ -1,0 +1,12 @@
+uuid: 28fd1791-dfb0-4bbc-a73d-6a3e304bb969
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - aryamaaru@gmail.com
+reply: ''
+weight: 1
+message: 'Message has been sent successfully. Thanks contact with us.'
+redirect: ''

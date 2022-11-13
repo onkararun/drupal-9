@@ -1,0 +1,18 @@
+uuid: 83216e94-cff7-441f-a424-12222ddc51e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.students
+id: node.students.title
+field_name: title
+entity_type: node
+bundle: students
+label: 'Student Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

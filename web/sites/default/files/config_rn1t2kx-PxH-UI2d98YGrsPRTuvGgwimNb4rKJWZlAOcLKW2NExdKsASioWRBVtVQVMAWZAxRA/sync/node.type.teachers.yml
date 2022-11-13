@@ -1,0 +1,17 @@
+uuid: fb2e8e52-6a3f-48d7-89a2-98a403fc3c1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Teachers
+type: teachers
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

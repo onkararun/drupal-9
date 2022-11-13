@@ -1,0 +1,33 @@
+uuid: 4fadbd3b-21dd-4718-ae99-98e133c708f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slideshow.field_slider_image
+    - node.type.slideshow
+  module:
+    - image
+    - user
+id: node.slideshow.default
+targetEntityType: node
+bundle: slideshow
+mode: default
+content:
+  field_slider_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  search_api_excerpt: true

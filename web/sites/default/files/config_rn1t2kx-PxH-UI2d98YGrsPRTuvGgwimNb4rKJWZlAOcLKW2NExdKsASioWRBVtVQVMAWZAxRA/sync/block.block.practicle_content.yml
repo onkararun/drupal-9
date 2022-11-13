@@ -1,0 +1,22 @@
+uuid: 8fa866df-6f6d-48da-ac07-cd3a7fa847c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - practicle
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: practicle_content
+theme: practicle
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 0ab09493-e1a2-4e6c-8c1e-19b1778a569e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - practicle
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: practicle_syndicate
+theme: practicle
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

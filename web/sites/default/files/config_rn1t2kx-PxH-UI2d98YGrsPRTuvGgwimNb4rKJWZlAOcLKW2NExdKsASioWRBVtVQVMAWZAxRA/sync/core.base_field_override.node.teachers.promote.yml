@@ -1,0 +1,22 @@
+uuid: 7bbe5d40-e6e6-4377-a661-6fe333005df8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.teachers
+id: node.teachers.promote
+field_name: promote
+entity_type: node
+bundle: teachers
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,10 @@
+uuid: 9145a888-4724-41ea-8424-7beeed67997d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.gallery_view
+label: 'Gallery View'
+targetEntityType: node
+cache: true

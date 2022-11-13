@@ -1,0 +1,29 @@
+uuid: 56e877f6-511c-4d50-a60c-f7761c0c8688
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teacher_assign
+    - node.type.students
+    - node.type.teachers
+id: node.students.field_teacher_assign
+field_name: field_teacher_assign
+entity_type: node
+bundle: students
+label: 'Teacher Assign'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      teachers: teachers
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

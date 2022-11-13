@@ -1,0 +1,20 @@
+uuid: 916caaa3-7aa0-4f6c-9ced-2b064aa01683
+langcode: en
+status: true
+dependencies:
+  module:
+    - dependency_injection_services
+  theme:
+    - olivero
+id: servicesanddependencyinjection
+theme: olivero
+region: sidebar
+weight: -6
+provider: null
+plugin: dependency_injection_services
+settings:
+  id: dependency_injection_services
+  label: 'Services and dependency injection'
+  label_display: visible
+  provider: dependency_injection_services
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 28831b36-8b07-4010-8d51-58c8108d62e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - employee
+  theme:
+    - olivero
+id: customemployeeformblock
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: custom_block_employee_form
+settings:
+  id: custom_block_employee_form
+  label: 'Custom Employee Form Block'
+  label_display: visible
+  provider: employee
+visibility: {  }

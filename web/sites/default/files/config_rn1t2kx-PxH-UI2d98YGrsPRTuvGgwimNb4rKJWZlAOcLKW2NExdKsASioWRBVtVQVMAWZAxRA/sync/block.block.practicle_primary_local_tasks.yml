@@ -1,0 +1,22 @@
+uuid: 5326c2e3-f602-409c-93a3-574275ec0d37
+langcode: en
+status: true
+dependencies:
+  theme:
+    - practicle
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: practicle_primary_local_tasks
+theme: practicle
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

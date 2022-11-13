@@ -1,0 +1,21 @@
+uuid: b82359e7-666e-4fef-9f8b-849df2d788e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blog_top_section
+    - field.storage.block_content.field_date
+  module:
+    - datetime
+id: block_content.blog_top_section.field_date
+field_name: field_date
+entity_type: block_content
+bundle: blog_top_section
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

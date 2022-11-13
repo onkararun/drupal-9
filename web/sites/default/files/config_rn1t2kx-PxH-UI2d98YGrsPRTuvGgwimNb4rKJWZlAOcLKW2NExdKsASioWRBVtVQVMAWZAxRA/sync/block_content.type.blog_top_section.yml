@@ -1,0 +1,8 @@
+uuid: 03cdf0f9-7377-4052-85e1-c5522ea8a3af
+langcode: en
+status: true
+dependencies: {  }
+id: blog_top_section
+label: 'Blog Top Section'
+revision: 0
+description: 'this is used for blog top section'

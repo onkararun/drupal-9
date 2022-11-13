@@ -1,0 +1,22 @@
+uuid: 3eb7dc26-8439-4e0e-90f5-1860e4e9f859
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - practicle
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: practicle_breadcrumbs
+theme: practicle
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
