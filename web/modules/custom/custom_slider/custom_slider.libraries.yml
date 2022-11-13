@@ -1,0 +1,11 @@
+slider:
+  version: 1.x
+  js:
+    /libraries/slick/slick.min.js: {}
+    js/init_slick.js: {}
+  css:
+    theme:
+      /libraries/slick/slick.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
