@@ -1,6 +1,6 @@
 name: Ajax Example
+description: Custom Ajax Dependent Select Box
 type: module
 core: 8.x
-description: Custom Ajax Dependent Select Box
 package: Custom
 core_version_requirement: ^8 || ^9
