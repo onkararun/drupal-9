@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Contains continents and countries hooks.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function countries_field_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.countries_field':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>Add Countries and continents field.</p>';
+      return $output;
+  }
+}

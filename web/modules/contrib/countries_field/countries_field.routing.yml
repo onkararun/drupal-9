@@ -1,0 +1,8 @@
+countries_field.countries_by_continent:
+  path: '/api/countries_field/countries'
+  defaults:
+    _controller: Drupal\countries_field\Controller\CountryController::getCountriesByContinent
+    _title: 'Get Countries by Continent'
+  requirements:
+    _permission: 'access content'
+  methods: ['POST']

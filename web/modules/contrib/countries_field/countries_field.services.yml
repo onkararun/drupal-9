@@ -1,0 +1,6 @@
+services:
+  countries_field.continents:
+    class: Drupal\countries_field\Continents
+
+  countries_field.countries:
+    class: Drupal\countries_field\Countries

@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains continents and countries hooks.
+ */
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_install().
+ *
+ * @throws \Exception
+ */
+function countries_field_install() {
+  try {
+    $database = Database::getConnection();
+    $schema = $database->schema();
+    $serviceContinents = Drupal::service('countries_field.continents');
+    $serviceCountries = Drupal::service('countries_field.countries');
+    // Prepare structure.
+    $schema->createTable('continents', $serviceContinents->getDBStructure());
+    $schema->createTable('countries', $serviceCountries->getDBStructure());
+    // Insert data to table.
+    $serviceContinents->insertContinents();
+    $serviceCountries->insertCountries();
+  }
+  catch (Exception $ex) {
+    Drupal::logger('countries_field')->error($ex->getMessage());
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function countries_field_uninstall() {
+  try {
+    $schema = Database::getConnection()->schema();
+    $schema->dropTable('continents');
+    $schema->dropTable('countries');
+  }
+  catch (Exception $ex) {
+    Drupal::logger('countries_field')->error($ex->getMessage());
+  }
+}
